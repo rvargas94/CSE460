@@ -1,0 +1,7 @@
+all: os
+
+os: Assembler.h VirtualMachine.h os.h Assembler.cpp VirtualMachine.cpp os.cpp OS_Main.cpp
+	g++ -Wall -Wextra -o os Assembler.cpp VirtualMachine.cpp os.cpp OS_Main.cpp
+	
+clean:
+	rm -rf os
